@@ -13,8 +13,8 @@ author: h4fan
 name                     : "h4fan"
 description              : "Another security website."
 
-url: https://h4fan.github.io/blogtest/ # root address of the site
-baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+url: https://h4fan.github.io/ # root address of the site
+baseurl: "/blogtest" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 
 permalink: /:year/:month/:day/:title.html
 
