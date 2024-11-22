@@ -1,0 +1,78 @@
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+remote_theme: h4fan/custombj
+
+minimal_mistakes_skin    : "default"
+
+
+title: "h4fan security"
+author: h4fan
+name                     : "h4fan"
+description              : "Another security website."
+
+url: https://h4fan.github.io # root address of the site
+baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+
+permalink: /:year/:month/:day/:title.html
+
+navbar-links:
+  Tags: "tags"
+  Story: "https://blog.tcp.im"
+  
+social-network-links:
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  mastodon: infosec.exchange/@maodun
+  github: h4fan
+  email: "techsecfan@outlook.com"
+
+rss-description: blog about web sec , bug bounty | h4fan security
+
+feed_show_tags: true
+
+post_search: true
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page
+
+sass:
+  style: :compressed
+  
+keywords: "web sec,bug bounty,pen test"
+gtag: G-2DJ8NB2H6M
+ms_clarity: lpt04i0b6e
+
+utterances:
+  repository: "h4fan/comment"# GitHub username/repository eg. "daattali/beautiful-jekyll"
+  issue-term: title   # Mapping between blog posts and GitHub issues
+  theme: github-light # Utterances theme
+  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
+  
+paginate: 5
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
